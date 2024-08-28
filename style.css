@@ -1,0 +1,206 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  height: 55px;
+  width: 100%;
+  background-color: lightgray;
+  position: fixed;
+}
+
+.home {
+  display: flex;
+  text-align: center;
+}
+
+
+
+.home a {
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.home a:hover {
+  
+  color: white;
+  background-color: black;
+  
+}
+
+body {
+  background-image: linear-gradient(to right, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  /* margin: 50%; */
+  top: 260px;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: navy;
+  animation-name: animy;
+  animation-duration: 2s;
+}
+
+@keyframes animy {
+  0% {
+    top: -10px;
+  }
+
+}
+
+
+
+
+section{
+  background-color: white;
+  width: 900px;
+  height: 350px;
+  border-radius: 5px;
+  position: relative;
+  top: 280px;
+  left: 310px;
+  animation-name: anime;
+  animation-duration: 3s;
+  display: flex;
+  flex-direction: row;
+
+
+}
+@keyframes anime{
+  0%{left: -300px;}
+75%{left: 310px;}
+}
+
+
+#content{
+  height: inherit;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  
+}
+.text{
+   
+  padding: 30px 12px 10px 0px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000080;
+}
+#form{
+  height: inherit;
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+#height{
+  max-height:  350px;
+}
+.container{
+  max-height: 44.4px;
+  width: 322px;
+  border-radius: 5px;
+  border: 3px solid rgb(204, 204, 204); ;
+  background-color: #FAEBD7;
+  position: relative;
+  margin: 5px;
+  text-indent: 10px;
+  max-width: 900px;
+  resize: vertical;
+  
+}
+textarea{
+  max-height: 100px;
+  width: 322px;
+  border-radius: 5px;
+  border: 3px solid rgb(204, 204, 204); ;
+  background-color: #FAEBD7;
+  position: relative;
+  margin: 5px;
+  text-indent: 10px;
+  max-width: 900px;
+  resize: vertical;
+}
+
+input[type = text], input[type = email], input[type = password], select, textarea {
+  transition: width 1s ease-in-out;
+  width: 322px;
+  padding: 12px 12px 12px 12px;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  background-color: antiquewhite;
+}
+
+input[type = text]:focus, input[type = email]:focus, input[type = password]:focus {
+
+width: 150%;
+border-radius: 10px;
+background-color: white;
+border: 3px solid #555;
+
+
+}
+select:focus, textarea:focus {
+border-radius: 10px;
+background-color: white;
+border:3px solid #555;
+}
+#button{
+  display: flex;
+  position:relative;
+  justify-content: center;
+  top:300px;
+  height: 50px;
+}
+#button button{
+  font-size: 15px;
+  height: 65px;
+  width: 120px;
+  border: 3px solid white;
+  background:none;
+  color: white;
+  font-weight: bold;
+
+  opacity: 0;
+  animation-name: submit;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  transition-property: all;
+  transition-duration: 1s;
+  
+
+}
+#button button:hover{
+  transform: rotateY(180deg);
+}
+@keyframes submit {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+  
+  
+}
