@@ -2,7 +2,6 @@ html {
   height: 100%;
   width: 100%;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -20,9 +19,6 @@ nav {
   display: flex;
   text-align: center;
 }
-
-
-
 .home a {
   text-decoration: none;
   color: black;
@@ -30,14 +26,11 @@ nav {
   padding: 15px 20px;
   text-align: center;
 }
-
 .home a:hover {
-  
   color: white;
   background-color: black;
   
 }
-
 body {
   background-image: linear-gradient(to right, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
 
@@ -63,10 +56,6 @@ h1 {
   }
 
 }
-
-
-
-
 section{
   background-color: white;
   width: 900px;
@@ -79,23 +68,17 @@ section{
   animation-duration: 3s;
   display: flex;
   flex-direction: row;
-
-
 }
 @keyframes anime{
   0%{left: -300px;}
 75%{left: 310px;}
 }
-
-
 #content{
   height: inherit;
   width: 30%;
   display: flex;
   align-items: center;
-  flex-direction: column;
-
-  
+  flex-direction: column; 
 }
 .text{
    
@@ -157,8 +140,6 @@ width: 150%;
 border-radius: 10px;
 background-color: white;
 border: 3px solid #555;
-
-
 }
 select:focus, textarea:focus {
 border-radius: 10px;
@@ -188,8 +169,6 @@ border:3px solid #555;
   animation-fill-mode: forwards;
   transition-property: all;
   transition-duration: 1s;
-  
-
 }
 #button button:hover{
   transform: rotateY(180deg);
@@ -200,7 +179,5 @@ border:3px solid #555;
   }
   100% {
       opacity: 1;
-  }
-  
-  
+  }  
 }
